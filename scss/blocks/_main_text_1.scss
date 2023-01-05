@@ -1,0 +1,52 @@
+    .main__text-1{
+        display: flex;
+        margin-top: 40px;
+        padding-left: 165px;
+        padding-right: 165px;
+        gap: 30px;
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 27px;
+            p{
+                font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+            }
+            h2{
+                font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+            }
+        }
+    }
+    @media only screen and(max-width:770px) {
+        .main__text-1{
+            flex-direction: column;
+            padding: 0;
+            div{
+                width: 398px;
+            }
+        }
+    }
+
+
+    @media only screen and(max-width:400px) {
+        .main__text-1{
+            gap: 150px;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            right: 50%;
+            div{
+                text-align: center;
+                width: 300px;
+            }
+        }
+
+    }

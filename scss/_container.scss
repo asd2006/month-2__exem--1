@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    .container{
+        width: 1440px;
+        margin: 0 auto;
+        position: relative;
+    }
+    button{
+        color: #fff;
+        padding: 14px 39px;
+        font-family: 'Space Mono';
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        border: 2px solid #FCB72B;
+        cursor: pointer;
+        justify-content: center;
+        background-color: #FCB72B;
+    }
+    button:hover{
+        background-color: #fff;
+        border: 2px solid  #FCB72B;
+        color: #FCB72B;
+    }
+
+@media only screen and(max-width:770px) {
+.container{
+    width: 770px;
+}
+}
+@media only screen and(max-width:400px) {
+    .container{
+        width: 400px;
+    }
+}
+

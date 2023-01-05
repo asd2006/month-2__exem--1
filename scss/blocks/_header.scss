@@ -1,0 +1,104 @@
+
+    header{
+        margin-top: 120px;
+        position: relative;
+        height: 650px;
+        margin-bottom: 160px;
+        .header__img{
+            position: absolute;
+            top: 0;
+            z-index: -1;
+        } button{
+        margin-left: 260px;
+    }  
+        h2{
+            padding-top: 153px;
+            padding-left: 165px;
+            font-family: 'Space Mono';
+            font-weight: 700;
+            font-size: 56px;
+            word-spacing:  20px;
+            line-height: 56px;
+            color: #FFFFFF;
+        }
+    }
+    .header_div{
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        gap: 57px;
+        align-items: center;
+        position: relative;
+
+        h3{
+            width: 400px;
+            font-family: 'Lexend Deca';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+        }
+     
+    } 
+         .header__img2{
+            position: absolute;
+            left: 705px;
+            top: 50px;
+        }
+ 
+@media only screen and(max-width:770px) {
+
+    header{
+        width: 768px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2{
+            margin: 0 auto;
+            padding: 0;
+        }
+        h3{
+            margin: 0 auto;
+        }
+        button{
+            margin: 0 auto;
+        }
+        .header__img{
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 769px;
+            height: 650px;
+        }
+    }
+    
+    
+    .header__img2{
+        position: absolute;
+        left: -400px;
+    }
+    .header_img1{
+        display: none;
+    }   
+}
+
+@media only screen and(max-width:400px) {
+    header{
+        margin-top: 50px;
+        width: 399px;
+        .header_div{
+            h3{
+                width: 311px;
+            }
+        }
+        .header__img{
+            width: 399px;
+        }
+        .header__img2{
+            top: 140px;
+            left: -350px;
+        }
+    }
+}

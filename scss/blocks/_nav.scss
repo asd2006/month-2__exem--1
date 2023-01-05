@@ -1,0 +1,98 @@
+    nav{
+        padding: 36px 165px;
+        display: flex;
+        width: 1440px;
+        top: 0;
+        justify-content: space-between;
+        background-color: #fff;
+        position: fixed;
+        align-items: center;
+        z-index: 1;
+    }
+    
+    ul{
+        list-style: none;
+        align-items: center;
+        display: flex;
+        gap: 32px;
+        .navbar__link{
+            display: none;
+        }
+        .nav_item1{
+            margin-right: 58px;
+        }
+        .nav_item{
+            a{
+                font-family: 'Space Mono';
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 25px;
+                color: #939CAA;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #FCB72B;
+            }
+        }
+    }
+    @media only screen and(max-width:770px){
+        nav{
+            padding: 36px 39px;
+            top: 0;
+            width: 770px;
+        }
+    }
+
+    @media only screen and(max-width:400px) {
+        nav{
+            width: 399px;
+            padding: 22px 30px;
+            ul{
+                position: relative;
+                width: 100%;
+                .nav_item1{
+                    margin-left: 50px;
+                }
+                .navbar__link{
+                    display: inline;
+                    cursor: pointer;
+                }
+                .navbar__link:hover .nav_item{
+                    // position: absolute;
+                    display: inline-block;
+                }
+                .nav_item{
+                    display: none;
+                }
+
+            }
+            .navbar__button{
+                display: none;
+            }
+           ul:hover .navbar__item2{
+                display: inline;
+                position: absolute;
+                background-color: #fff;
+                padding: 12px 24px;
+                top: 5px;
+                left: 0px;
+            }
+           ul:hover .navbar__item3{
+                display: inline;
+                position: absolute;
+                background-color: #fff;
+                padding: 12px 24px;
+                top: 48px;
+                left: 0px;
+            }
+           ul:hover .navbar__item4{
+                display: inline;
+                position: absolute;
+                background-color: #fff;
+                padding: 12px 24px;
+                top: 89px;
+                left: 0px;
+            }
+
+        }
+    }
